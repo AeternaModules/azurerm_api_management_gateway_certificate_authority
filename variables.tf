@@ -1,6 +1,6 @@
-variable "api_management_gateway_certificate_authoritys" {
+variable "api_management_gateway_certificate_authorities" {
   description = <<EOT
-Map of api_management_gateway_certificate_authoritys, attributes below
+Map of api_management_gateway_certificate_authorities, attributes below
 Required:
     - api_management_id
     - certificate_name
