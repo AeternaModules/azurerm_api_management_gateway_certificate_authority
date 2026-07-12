@@ -1,3 +1,7 @@
+output "api_management_gateway_certificate_authorities_id" {
+  description = "Map of id values across all api_management_gateway_certificate_authorities, keyed the same as var.api_management_gateway_certificate_authorities"
+  value       = { for k, v in azurerm_api_management_gateway_certificate_authority.api_management_gateway_certificate_authorities : k => v.id }
+}
 output "api_management_gateway_certificate_authorities_api_management_id" {
   description = "Map of api_management_id values across all api_management_gateway_certificate_authorities, keyed the same as var.api_management_gateway_certificate_authorities"
   value       = { for k, v in azurerm_api_management_gateway_certificate_authority.api_management_gateway_certificate_authorities : k => v.api_management_id }
